@@ -12,6 +12,10 @@
 
 `pnpm start`
 
+## Notes:
+If modifying or debugging, to run tests properly with playwright you may need to run at the first time
+`pnpm exec playwright install`
+
 # Exercise
 
 The goal of the project is to build a simple business loan application system.
@@ -137,7 +141,3 @@ There is none, ensure you submit your best attempt and as soon as you possibly c
 ### How to submit ?
 
 Submit a GitHub / Bitbucket repo for review. No ZIP files!
-
-## Boilerplate README
-
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

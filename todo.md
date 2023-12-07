@@ -3,7 +3,8 @@
 - [x] Scaffold NextJS app
 - [x] Add a Dockerfile
 - [x] Add ShadcnUI for components/stylng
-- [ ] Add Playwright to test flows
+- [x] Add Playwright to test page flows
+- [ ] Add Zod for data validation
 - [ ] Build the backend
   - [ ] An API endpoint that returns supported Accounting Providers (Initially Xero and MYOB)
   - [ ] An API endpoint that accepts the application form values submitted and returns an outcome for the loan application
