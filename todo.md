@@ -5,4 +5,20 @@
 - [x] Add ShadcnUI for components/stylng
 - [ ] Add Playwright to test flows
 - [ ] Build the backend
+  - [ ] An API endpoint that returns supported Accounting Providers (Initially Xero and MYOB)
+  - [ ] An API endpoint that accepts the application form values submitted and returns an outcome for the loan application
+  - [ ] AN API endpoint that will request from an accounting software provider a balance sheet for a selected business of the user
 - [ ] Build the frontend
+  - [ ] Landing page
+    - [ ] The user can go to the start page and initiate an application
+  - [ ] Application Form page
+    - [ ] The user can fill in the business details 
+      - [ ] Business Name
+      - [ ] Year Established
+    - [ ] The user can fill in the loan amount
+    - [ ] The user can select from a range of accounting providers
+      - [ ] The user can initiate a request for the balance sheet from the provider selected and it gets retrieved and added to the form data
+        - [ ] calculates Summary of profit or loss by year
+      - [ ] The user can review the application
+      - [ ] The user can submit the application to the decision engine. 
+        - [ ] Middleware rules are executed to augment the data sent with additional field values 
