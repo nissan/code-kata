@@ -2,7 +2,7 @@
 
 - [x] Scaffold NextJS app
 - [x] Add a Dockerfile
-- [ ] Add ShadcnUI for components/stylng
+- [x] Add ShadcnUI for components/stylng
 - [ ] Add Playwright to test flows
 - [ ] Build the backend
 - [ ] Build the frontend
