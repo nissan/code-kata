@@ -1,4 +1,16 @@
-# Instructions
+# Running Instructions
+## With Docker
+`docker build -t techtest .`
+
+`docker run -p 3000:3000 techtest`
+
+## Without docker
+`pnpm install`
+
+`pnpm build`
+
+`pnpm start`
+
 # Exercise
 
 The goal of the project is to build a simple business loan application system.
