@@ -5,21 +5,22 @@
 - [x] Add ShadcnUI for components/stylng
 - [x] Add Playwright to test page flows
 - [x] Add Zod for data validation
+- [ ] Add winston for logging
 - [ ] Build the backend
   - [x] An API endpoint that starts the application (returns a new id for the application to be made)
-  - [ ] An API endpoint that returns supported Accounting Providers (Initially Xero and MYOB)
-  - [ ] An API endpoint that accepts the application form values submitted and returns an outcome for the loan application
-  - [ ] AN API endpoint that will request from an accounting software provider a balance sheet for a selected business of the user
+  - [x] An API endpoint that returns supported Accounting Providers (Initially Xero and MYOB)
+  - [x] An API endpoint that accepts the application form values submitted and returns an outcome for the loan application
+  - [x] An API endpoint that will request from an accounting software provider a balance sheet for a selected business of the user
 - [ ] Build the frontend
   - [ ] Landing page
-    - [ ] The user can go to the start page and initiate an application
+    - [x] The user can go to the start page and initiate an application
   - [ ] Application Form page
-  - [ ] The application form page has a new application ID pre-populated
+  - [x] The application form page has a new application ID pre-populated
     - [ ] The user can fill in the business details 
-      - [ ] Business Name
-      - [ ] Year Established
-    - [ ] The user can fill in the loan amount
-    - [ ] The user can select from a range of accounting providers
+      - [x] Business Name
+      - [x] Year Established
+    - [x] The user can fill in the loan amount
+    - [x] The user can select from a range of accounting providers
       - [ ] The user can initiate a request for the balance sheet from the provider selected and it gets retrieved and added to the form data
         - [ ] calculates Summary of profit or loss by year
       - [ ] The user can review the application

@@ -1,8 +1,10 @@
-import Image from 'next/image'
 import { Button } from "@/components/ui/button"
+import { randomUUID } from "crypto";
 import Link from 'next/link'
 
+
 export default function Home() {
+  const appId=randomUUID();
   return (
     <>
       <header>
@@ -17,7 +19,7 @@ export default function Home() {
 
         <div>
           <Button asChild={true}>
-            <Link href="/apply">
+            <Link href={`/loan/${appId}`}>
               Apply for a loan
             </Link>
           </Button></div>

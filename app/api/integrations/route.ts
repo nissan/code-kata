@@ -1,10 +1,12 @@
-export async function GET(request: Request) {
+export async function GET() {
   const products = [{
     "id": 1, 
-    "name": "Xero"
+    "name": "xero",
+    "description": "Xero"
   }, {
     "id": 2, 
-    "name": "MYOB"
+    "name": "myob",
+    "description": "MYOB"
   }]
 
   return Response.json({ products })
