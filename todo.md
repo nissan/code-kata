@@ -4,8 +4,9 @@
 - [x] Add a Dockerfile
 - [x] Add ShadcnUI for components/stylng
 - [x] Add Playwright to test page flows
-- [ ] Add Zod for data validation
+- [x] Add Zod for data validation
 - [ ] Build the backend
+  - [ ] An API endpoint that starts the application (returns an id for the applicationgi)
   - [ ] An API endpoint that returns supported Accounting Providers (Initially Xero and MYOB)
   - [ ] An API endpoint that accepts the application form values submitted and returns an outcome for the loan application
   - [ ] AN API endpoint that will request from an accounting software provider a balance sheet for a selected business of the user
