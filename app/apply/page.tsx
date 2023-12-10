@@ -1,6 +1,24 @@
+import { logger } from '@/lib/logger';
 import Image from 'next/image'
 
-export default function Apply() {
+async function initaliseApplication() {
+    const res = await fetch(`${process.env.API_PREFIX}${process.env.API_HOST}:${process.env.API_PORT}/api/application`)
+    
+    if (!res.ok) {
+        logger.error("GET /apply: Failed to initialise the application");
+        throw new Error('Failed to initialise application')
+    }
+    
+    const json = await res.json();
+    logger.info(`GET /apply: Received response from ${process.env.API_PREFIX}${process.env.API_HOST}:${process.env.API_PORT}/api/application : ${JSON.stringify(json)}`)
+
+
+    return json;
+}
+
+export default async function Apply() {
+    const {appId} = await initaliseApplication();
+    logger.info(`GET /apply: Initialised new application page with id: ${appId}`)
     return (
         <main className="flex min-h-screen flex-col items-center justify-between p-24">
             <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">

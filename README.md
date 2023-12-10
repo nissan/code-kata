@@ -1,4 +1,7 @@
 # Running Instructions
+Before running:
+- Copy .env.example to .env.local or .env. Use defaults for testing or update based on updated API URLs
+
 ## With Docker
 `docker build -t techtest .`
 
@@ -13,7 +16,8 @@
 `pnpm start`
 
 ## Notes:
-If modifying or debugging, to run tests properly with playwright you may need to run at the first time
+
+- If modifying or debugging, to run tests properly with playwright you may need to run at the first time
 `pnpm exec playwright install`
 
 # Exercise

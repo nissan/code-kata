@@ -1,8 +1,9 @@
 import { randomUUID } from "crypto";
+import {logger} from "../../../lib/logger";
 
 export async function GET(request: Request) {
     const appId = getAppId();
-    console.log(appId)
+    logger.info(`GET /api/application: Initialised new application: ${appId}`)
     return Response.json({ appId })
   }
 

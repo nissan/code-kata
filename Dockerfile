@@ -17,5 +17,8 @@ COPY . .
 # Step 6: Build Application
 RUN pnpm build
 
+#TODO: Change this step to modify .env based on preferences
+COPY .env.example .env
+
 # Step 7: Start Command
 CMD ["pnpm", "start"]
