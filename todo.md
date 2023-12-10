@@ -6,7 +6,7 @@
 - [x] Add Playwright to test page flows
 - [x] Add Zod for data validation
 - [ ] Build the backend
-  - [ ] An API endpoint that starts the application (returns an id for the applicationgi)
+  - [ ] An API endpoint that starts the application (returns a new id for the application to be made)
   - [ ] An API endpoint that returns supported Accounting Providers (Initially Xero and MYOB)
   - [ ] An API endpoint that accepts the application form values submitted and returns an outcome for the loan application
   - [ ] AN API endpoint that will request from an accounting software provider a balance sheet for a selected business of the user
@@ -14,6 +14,7 @@
   - [ ] Landing page
     - [ ] The user can go to the start page and initiate an application
   - [ ] Application Form page
+  - [ ] The application form page has a new application ID pre-populated
     - [ ] The user can fill in the business details 
       - [ ] Business Name
       - [ ] Year Established
